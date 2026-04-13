@@ -1,0 +1,10 @@
+name: icon-generator-ai-mcp
+description: "MEOK AI Labs — icon-generator-ai-mcp"
+vendor: MEOK AI Labs
+homepage: https://meok.ai
+repository: https://github.com/CSOAI-ORG/icon-generator-ai-mcp
+license: MIT
+categories: [Design, Creative]
+tags: [icon-generation, svg, favicon, icon-design, graphic-design]
+runtime: python
+entrypoint: server.py
