@@ -1,20 +1,76 @@
 {
   "name": "icon-generator-ai-mcp",
-  "description": "MEOK AI Labs \u2014 icon-generator-ai-mcp",
-  "vendor": "MEOK AI Labs",
-  "homepage": "https://meok.ai",
-  "repository": "https://github.com/CSOAI-ORG/icon-generator-ai-mcp",
-  "runtime": "python",
-  "entrypoint": "server.py",
+  "description": "icon-generator-ai-mcp \u2014 Built by [MEOK AI Labs](https://meok.ai)",
+  "version": "1.0.0",
   "tools": [
-    "run"
-  ],
-  "categories": [
-    "Design",
-    "Creative"
-  ],
-  "pricing": {
-    "free": "50 calls/day",
-    "pro": "$9/mo"
-  }
+    {
+      "name": "generate_icon_svg",
+      "description": "MEOK AI Labs tool.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string"
+          },
+          "style": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "description"
+        ]
+      }
+    },
+    {
+      "name": "suggest_icons",
+      "description": "MEOK AI Labs tool.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "context": {
+            "type": "string"
+          },
+          "count": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "context"
+        ]
+      }
+    },
+    {
+      "name": "convert_icon_format",
+      "description": "MEOK AI Labs tool.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "svg_data": {
+            "type": "string"
+          },
+          "format": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "svg_data"
+        ]
+      }
+    },
+    {
+      "name": "search_icon_names",
+      "description": "MEOK AI Labs tool.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "query"
+        ]
+      }
+    }
+  ]
 }
