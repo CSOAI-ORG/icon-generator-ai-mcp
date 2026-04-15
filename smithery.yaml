@@ -1,5 +1,5 @@
 name: icon-generator-ai-mcp
-description: "icon-generator-ai-mcp \u2014 Built by [MEOK AI Labs](https://meok.ai)"
+description: "MEOK AI Labs \u2014 Generate SVG icon data and descriptions."
 version: 1.0.0
 tools:
 - name: generate_icon_svg
