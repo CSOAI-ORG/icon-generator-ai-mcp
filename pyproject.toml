@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 [project]
 name = "icon-generator-ai-mcp"
 version = "1.0.0"
-description = "MEOK AI Labs — icon-generator-ai-mcp"
+description = "AI-powered icon generator ai MCP server for agents. Supports generate icon svg, suggest icons, convert icon format. By MEOK AI Labs."
 license = {file = "LICENSE"}
 requires-python = ">=3.10"
 authors = [{name = "MEOK AI Labs", email = "nicholas@meok.ai"}]

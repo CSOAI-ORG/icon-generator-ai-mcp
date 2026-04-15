@@ -1,1 +1,11 @@
-{"name":"icon-generator-ai-mcp","version":"1.0.0","description":"MEOK AI Labs MCP","author":"MEOK AI Labs","license":"MIT","repository":{"type":"git","url":"https://github.com/CSOAI-ORG/icon-generator-ai-mcp"}}
+{
+  "name": "icon-generator-ai-mcp",
+  "version": "1.0.0",
+  "description": "AI-powered icon generator ai MCP server for agents. Supports generate icon svg, suggest icons, convert icon format. By MEOK AI Labs.",
+  "author": "MEOK AI Labs",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CSOAI-ORG/icon-generator-ai-mcp"
+  }
+}
