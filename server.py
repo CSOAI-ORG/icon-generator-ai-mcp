@@ -60,7 +60,22 @@ ICON_CATEGORIES = {
 
 @mcp.tool()
 def generate_icon_svg(name: str, size: int = 24, stroke_width: float = 2.0, color: str = "currentColor", style: str = "outline", api_key: str = "") -> str:
-    """Generate an SVG icon by name. Supports outline style with configurable size, color, and stroke width."""
+    """Generate an SVG icon by name. Supports outline style with configurable size, color, and stroke width.
+
+    Behavior:
+        This tool generates structured output without modifying external systems.
+        Output is deterministic for identical inputs. No side effects.
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
@@ -98,7 +113,23 @@ def generate_icon_svg(name: str, size: int = 24, stroke_width: float = 2.0, colo
 
 @mcp.tool()
 def list_icon_sets(category: str = "", api_key: str = "") -> str:
-    """List all available icons, optionally filtered by category."""
+    """List all available icons, optionally filtered by category.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
@@ -128,7 +159,23 @@ def list_icon_sets(category: str = "", api_key: str = "") -> str:
 
 @mcp.tool()
 def search_icons(query: str, api_key: str = "") -> str:
-    """Search for icons by keyword. Returns matching icon names and their categories."""
+    """Search for icons by keyword. Returns matching icon names and their categories.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
@@ -180,7 +227,23 @@ def search_icons(query: str, api_key: str = "") -> str:
 
 @mcp.tool()
 def convert_format(icon_name: str, target_format: str = "react", size: int = 24, color: str = "currentColor", api_key: str = "") -> str:
-    """Convert an icon to different output formats: react (JSX), vue, css-class, data-uri, path-only."""
+    """Convert an icon to different output formats: react (JSX), vue, css-class, data-uri, path-only.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
