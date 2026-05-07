@@ -75,6 +75,15 @@ def generate_icon_svg(name: str, size: int = 24, stroke_width: float = 2.0, colo
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        name (str): The name to analyze or process.
+        size (int): The size to analyze or process.
+        stroke_width (float): The stroke width to analyze or process.
+        color (str): The color to analyze or process.
+        style (str): The style to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -143,6 +152,11 @@ def list_icon_sets(category: str = "", api_key: str = "") -> str:
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        category (str): The category to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -203,6 +217,11 @@ def search_icons(query: str, api_key: str = "") -> str:
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        query (str): The query to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -285,6 +304,14 @@ def convert_format(icon_name: str, target_format: str = "react", size: int = 24,
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        icon_name (str): The icon name to analyze or process.
+        target_format (str): The target format to analyze or process.
+        size (int): The size to analyze or process.
+        color (str): The color to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
