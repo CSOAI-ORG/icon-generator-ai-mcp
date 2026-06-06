@@ -1,0 +1,25 @@
+{
+  "name": "icon-generator-ai-mcp",
+  "title": "Icon Generator Ai Mcp",
+  "description": "AI-powered icon generator ai MCP server for agents. Supports generate icon svg, suggest icons, convert icon format. By MEOK AI Labs.",
+  "version": "1.0.6",
+  "homepage": "https://meok.ai",
+  "license": "MIT",
+  "transport": {
+    "type": "stdio"
+  },
+  "tools": [
+    {
+      "name": "generate_icon_svg"
+    },
+    {
+      "name": "list_icon_sets"
+    },
+    {
+      "name": "search_icons"
+    },
+    {
+      "name": "convert_format"
+    }
+  ]
+}

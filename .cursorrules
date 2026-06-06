@@ -1,0 +1,9 @@
+# icon-generator-ai-mcp - Auto-trigger Rules
+
+When the user asks about icon generator, use icon-generator-ai-mcp tools: generate_icon_svg, list_icon_sets, search_icons, convert_format
+
+**MCP server for icon generator ai mcp operations**
+
+Install: `pip install icon-generator-ai-mcp`
+
+By MEOK AI Labs — MIT licensed.

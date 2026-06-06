@@ -1,0 +1,33 @@
+# icon-generator-ai-mcp
+# **MCP server for icon generator ai mcp operations**
+
+## Install
+```bash
+pip install icon-generator-ai-mcp
+```
+
+## Auth & Rate Limits
+- Free tier: 10 calls/day. No API key required.
+- Pro tier (£79/mo): unlimited + signed attestations.
+- Enterprise (£1,499/mo): white-label.
+
+## Tools
+
+### `generate_icon_svg`
+Generate an SVG icon by name. Supports outline style with configurable size, color, and stroke width.
+
+### `list_icon_sets`
+List all available icons, optionally filtered by category.
+
+### `search_icons`
+Search for icons by keyword. Returns matching icon names and their categories.
+
+### `convert_format`
+Convert an icon to different output formats: react (JSX), vue, css-class, data-uri, path-only.
+
+
+## Maintainer
+MEOK AI Labs · hello@meok.ai · https://meok.ai · MIT licensed
+
+## Pairs with
+Governance moat: pair this tool with any of MEOK's 38 governance MCPs (EU AI Act, DORA, NIS2, CRA, GDPR, ISO 42001, etc.) for full compliance coverage.

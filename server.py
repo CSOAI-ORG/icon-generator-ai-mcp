@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Generate SVG icons, search icon sets, and convert icon formats. — MEOK AI Labs."""
+"""
+Generate SVG icons, search icon sets, and convert icon formats. — MEOK AI Labs."""
 
 import sys, os
-sys.path.insert(0, os.path.expanduser('~/clawd/meok-labs-engine/shared'))
 from auth_middleware import check_access
 
 import json, math, hashlib
@@ -101,7 +101,7 @@ def generate_icon_svg(name: str, size: int = 24, stroke_width: float = 2.0, colo
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if err := _rl():
         return err
 
@@ -174,7 +174,7 @@ def list_icon_sets(category: str = "", api_key: str = "") -> str:
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if err := _rl():
         return err
 
@@ -239,7 +239,7 @@ def search_icons(query: str, api_key: str = "") -> str:
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if err := _rl():
         return err
 
@@ -329,7 +329,7 @@ def convert_format(icon_name: str, target_format: str = "react", size: int = 24,
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if err := _rl():
         return err
 
@@ -369,5 +369,8 @@ def convert_format(icon_name: str, target_format: str = "react", size: int = 24,
     })
 
 
-if __name__ == "__main__":
+def main():
     mcp.run()
+
+if __name__ == '__main__':
+    main()
