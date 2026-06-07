@@ -1,0 +1,59 @@
+{
+  "name": "icon-generator-ai-mcp",
+  "description": "Icon Generator Ai MCP Server by MEOK AI Labs",
+  "url": "https://proofof.ai/scorecard/icon-generator-ai-mcp.html",
+  "version": "1.0.6",
+  "protocolVersion": "0.2.0",
+  "provider": {
+    "organization": "MEOK AI Labs",
+    "url": "https://meok.ai"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text"
+  ],
+  "skills": [
+    {
+      "id": "generate_icon_svg",
+      "name": "Generate Icon Svg",
+      "description": "generate_icon_svg via icon-generator-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "list_icon_sets",
+      "name": "List Icon Sets",
+      "description": "list_icon_sets via icon-generator-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "search_icons",
+      "name": "Search Icons",
+      "description": "search_icons via icon-generator-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "convert_format",
+      "name": "Convert Format",
+      "description": "convert_format via icon-generator-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    }
+  ]
+}
