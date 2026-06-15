@@ -1,4 +1,4 @@
-<!-- mcp-name: CSOAI-ORG/icon-generator-ai-mcp -->
+<!-- mcp-name: io.github.CSOAI-ORG/icon-generator-ai-mcp -->
 [![MCP Scorecard: 86/100](https://img.shields.io/badge/proofof.ai-86%2F100-5b21b6)](https://proofof.ai/scorecard/icon-generator-ai-mcp.html)
 
 # Icon Generator Ai MCP
@@ -138,3 +138,8 @@ Once configured, ask your assistant, for example:
 - "Use `generate_icon_svg` to …"
 - "Use `list_icon_sets` to …"
 - "Use `search_icons` to …"
+
+## See also
+
+MEOK compliance MCP fleet:
+[`meok-eu-aigc-icon-mcp`](https://github.com/CSOAI-ORG/meok-eu-aigc-icon-mcp)
